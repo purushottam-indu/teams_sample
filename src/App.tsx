@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Pages/home';
 import './App.css'
 import Chat from './Pages/Chat';
@@ -11,10 +11,11 @@ function App() {
   return (
     <>
    
-      <Router>
+      <Router basename="/teams_sample">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/chat" element={<Chat />} />
+          <Route path="/" element={<Navigate to="/teams_sample" />} />
+          <Route path="/teams_sample" element={<Home />} />
+          <Route path="/teams_sample/chat" element={<Chat />} />
         </Routes>
       </Router>
    

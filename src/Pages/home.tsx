@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate('/chat');
+    navigate('/teams_sample/chat');
   };
 
   return (
