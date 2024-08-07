@@ -1,0 +1,45 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "4fdcf87d-92b8-4bb5-8999-c51c54ec2807",
+    "packageName": "com.example.textapp",
+    "developer": {
+      "name": "Your Name",
+      "websiteUrl": "https://purushottam-indu.github.io/teams_sample",
+      "privacyUrl": "https://purushottam-indu.github.io/teams_sample/privacy",
+      "termsOfUseUrl": "https://purushottam-indu.github.io/teams_sample/terms"
+    },
+    "name": {
+      "short": "Waffle",
+      "full": "teams_sample"
+    },
+    "description": {
+      "short": "sample for integrating into teams.",
+      "full": "sample react app hosted on github pages for integrating into teams."
+    },
+    "icons": {
+      "color": "color.png",
+      "outline": "outline.png"
+    },
+    "accentColor": "#E6E6FA",
+    "staticTabs": [
+      {
+        "entityId": "home",
+        "name": "Home",
+        "contentUrl": "https://purushottam-indu.github.io/teams_sample/",
+        "websiteUrl": "https://purushottam-indu.github.io/teams_sample/",
+        "scopes": [
+          "personal"
+        ]
+      }
+    ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": [
+      "purushottam-indu.github.io"
+    ]
+  }
+  

@@ -1,10 +1,19 @@
+import { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Pages/home'; // This will now be your TeamsSample component
 import Chat from './Pages/Chat';
 import NotFound from './Pages/NotFound'; // Create a NotFound component for unmatched routes
 import './App.css';
+// import * as microsoftTeams from '@microsoft/teams-js';
+// import { initialize } from '@microsoft/teams-js';
+import { app } from '@microsoft/teams-js';
 
-function App() {
+
+const App: React.FC = () => {
+  useEffect(() => {
+    app.initialize();
+  }, []);
+
   return (
     <Router>
       <Routes>
