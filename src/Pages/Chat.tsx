@@ -254,7 +254,7 @@ const Chat: React.FC = () => {
   ];
 
   const handleHomeButtonClick = () => {
-    navigate('/');
+    navigate('/teams_sample');
   };
 
   const handleClickOpen = () => {
